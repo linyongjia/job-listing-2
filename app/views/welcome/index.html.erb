@@ -1,0 +1,81 @@
+<!-- 应用首页导航条的js部分。 -->
+  <script>
+    $(document).ready(function(){
+       $(".navbar-fixed-top").css("background-color", "transparent");
+       $(".navbar-fixed-top").css("border-color", "transparent");
+    $(window).scroll(function() {
+       if ($(document).scrollTop() > 80) {
+         $(".navbar-fixed-top").css("background-color", "#323436");
+       }
+        else {
+         $(".navbar-fixed-top").css("background-color", "transparent");
+       }
+     });
+    });
+  </script>
+
+  <div class="col-md-12">
+     <div class="row box">
+       <div class="box-inner col-md-6 col-md-offset-3">
+         <h1 class="title">找书网，更专业的互联网找书平台</h1>
+         <p class="slogan">
+           我们希望借助这个网站，让你能找到更适合你的书。
+         </p>
+         <p class="lead">
+           <%= link_to '试下找书', jobs_path, class: 'btn btn-danger' %>
+         </p>
+       </div>
+     </div>
+   </div>
+
+   <div class="col-md-4 col-md-offset-4">
+     <h2 class="title1">我们可以帮你高效地找书</h2>
+   </div>
+
+    <div class="content-section-a">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">大数据精准推荐</h2>
+            <p class="lead">我们利用大数据高效精准给您推荐好书</p>
+          </div>
+          <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+            <%= image_tag 'https://static.pexels.com/photos/262438/pexels-photo-262438.jpeg', class: 'img-responsive' %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">名人再帮你筛选</h2>
+            <p class="lead">我们跟很多名人合作，让他们先把书籍精挑细选一遍</p>
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <%= image_tag 'https://static.pexels.com/photos/212286/pexels-photo-212286.jpeg', class: 'img-responsive' %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section-a">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">采用智能技术借书</h2>
+            <p class="lead">采用特殊设计的算法借书方式，让借书更有效率</p>
+          </div>
+          <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+            <%= image_tag 'https://static.pexels.com/photos/97077/pexels-photo-97077.jpeg', class: 'img-responsive' %>
+          </div>
+        </div>
+      </div>
+    </div>
